@@ -88,9 +88,9 @@ body{
 
 .img1{
     height: 450px;
-    background-image: url(../IMG/EscritorioOficina.jpeg);
+    background-image: url(/GrupoDeTripulantes1-Grupo63-1/img/SISO.jpeg);
     margin-bottom: 2rem;
-    position: relative;
+    position:relative;
 }
 .contenido-img1{
     background-color:rgba(0,0,0,0.4);
