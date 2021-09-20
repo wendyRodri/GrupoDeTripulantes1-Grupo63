@@ -1,11 +1,12 @@
 :root {
   --blanco: #fff;
   --negro: #000000;
-  --oscuro: rgb(40, 59, 69);
-  --medioscuro: #7eb0cf;
   --gris: rgb(163, 168, 168);
+  --amarillo: #ffbf00;
+  --oscuro: rgb(40, 59, 69);
   --azul: rgb(9, 96, 146);
   --secundario: #678fa8;
+  --medioscuro: #7eb0cf;
   --primario: #8ec5e8;
   --mouseencima: #95d0f5;
 }
@@ -132,8 +133,9 @@ h4 {
   display: inline-block;
   margin: 2px;
   padding: 2px;
-  color: #95d0f5;
-  text-shadow: 0px 3px 5px black;
+  color: var(--amarillo);
+  /*color: #95d0f5;*/
+  text-shadow: 0px 3px 8px black;
 }
 
 .contenedor {
