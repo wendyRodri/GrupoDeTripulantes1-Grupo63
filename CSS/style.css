@@ -125,12 +125,15 @@ h3 {
   font-weight: 400;
   font-size: 1.6rem;
 }
-h4{
+h4 {
+  /*Aqui esta configurado el titulo SIGISS by Geyden*/
   color: var(--blanco);
   font-size: 5rem;
   display: inline-block;
   margin: 2px;
-  padding:2px;
+  padding: 2px;
+  color: #95d0f5;
+  text-shadow: 0px 3px 5px black;
 }
 
 .contenedor {
@@ -198,7 +201,6 @@ h4{
   -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
   box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
-}
 }
 
 .iconos i {
