@@ -1,10 +1,14 @@
 :root {
   --blanco: #fff;
-  --negro: rgb(10, 10, 10);
+  --negro: #000000;
   --gris: rgb(163, 168, 168);
-  --azul: rgb(0, 0, 255);
-  --secundario: #0097a7;
-  --primario: rgba(255, 193, 7, 1);
+  --amarillo: #ffbf00;
+  --oscuro: rgb(40, 59, 69);
+  --azul: rgb(9, 96, 146);
+  --secundario: #678fa8;
+  --medioscuro: #7eb0cf;
+  --primario: #8ec5e8;
+  --mouseencima: #95d0f5;
 }
 
 html {
@@ -36,12 +40,12 @@ body {
   margin: auto;
 }
 .nav-bg {
-  background-color: var(--secundario);
+  background-color: var(--oscuro);
 }
 .navegacion-principal {
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  background-color: var(--secundario);
+  background-color: var(--oscuro);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,16 +58,22 @@ body {
   }
 }
 .navegacion-principal a {
-  padding: 1rem 2rem;
+  padding: 1.5rem 7rem;
   color: var(--blanco);
   text-decoration: none;
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .navegacion-principal a:hover {
-  background-color: var(--primario);
+  background-color: var(--gris);
   color: var(--negro);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
 }
 
 .navegacion-principal a :last-of-type {
@@ -97,24 +107,37 @@ body {
   color: var(--blanco);
 }
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 h1 spam {
   font-size: 1.4rem;
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
 }
 h2 {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
 }
 h3 {
   color: var(--secundario);
   font-weight: 400;
   font-size: 1.6rem;
 }
+h4 {
+  /*Aqui esta configurado el titulo SIGISS by Geyden*/
+  color: var(--blanco);
+  font-size: 5rem;
+  display: inline-block;
+  margin: 2px;
+  padding: 2px;
+  color: var(--amarillo);
+  /*color: #95d0f5;*/
+  text-shadow: 0px 3px 8px black;
+}
+
 .contenedor {
   margin: 0 auto;
   max-width: 1200px;
@@ -151,11 +174,11 @@ h3 {
   scroll-snap-stop: always;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .servicios {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    column-gap: 1rem;
+    column-gap: 0.5rem;
   }
 }
 
@@ -171,17 +194,20 @@ h3 {
 
 .iconos {
   display: flex;
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--primario);
-  border-radius: 50%;
+  background-color: var(--oscuro);
+  border-radius: 20%;
+  -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
 }
 
 .iconos i {
-  font-size: 2rem;
-  color: var(--negro);
+  font-size: 0.1rem;
+  color: var(--oscuro);
 }
 
 .formulario {
@@ -194,7 +220,7 @@ h3 {
 .formulario legend {
   text-align: center;
   font-size: 1.2rem;
-  color: var(--primario);
+  color: var(--oscuro);
   margin-bottom: 2rem;
   display: block;
   text-transform: uppercase;
